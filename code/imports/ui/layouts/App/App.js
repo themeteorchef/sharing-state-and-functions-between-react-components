@@ -8,7 +8,6 @@ import { Roles } from 'meteor/alanning:roles';
 import Navigation from '../../components/Navigation/Navigation';
 import Authenticated from '../../components/Authenticated/Authenticated';
 import Public from '../../components/Public/Public';
-import Index from '../../pages/Index/Index';
 import Order from '../../pages/Order/Order';
 import Documents from '../../pages/Documents/Documents';
 import NewDocument from '../../pages/NewDocument/NewDocument';
