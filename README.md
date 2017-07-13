@@ -1,6 +1,6 @@
 #### Tutorial: Sharing State and Functions Between React Components
 
-Description of this tutorial goes here. Used in your tutorial repo's README.md file.
+In this tutorial, we'll learn how to pass state and functions between components in React. We'll build a simple restaurant ordering checkout, seeing how child components can access the state of and call functions on parent components.
 
 [Read this tutorial on The Meteor Chef](https://themeteorchef.com/tutorials/sharing-state-and-functions-between-react-components)  
 
