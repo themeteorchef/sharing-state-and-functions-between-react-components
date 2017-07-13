@@ -9,6 +9,7 @@ import Navigation from '../../components/Navigation/Navigation';
 import Authenticated from '../../components/Authenticated/Authenticated';
 import Public from '../../components/Public/Public';
 import Index from '../../pages/Index/Index';
+import Order from '../../pages/Order/Order';
 import Documents from '../../pages/Documents/Documents';
 import NewDocument from '../../pages/NewDocument/NewDocument';
 import ViewDocument from '../../pages/ViewDocument/ViewDocument';
@@ -33,7 +34,7 @@ const App = props => (
       <Navigation {...props} />
       <Grid>
         <Switch>
-          <Route exact name="index" path="/" component={Index} />
+          <Route exact name="index" path="/" component={Order} />
           <Authenticated exact path="/documents" component={Documents} {...props} />
           <Authenticated exact path="/documents/new" component={NewDocument} {...props} />
           <Authenticated exact path="/documents/:_id" component={ViewDocument} {...props} />

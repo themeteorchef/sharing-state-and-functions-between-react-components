@@ -1,0 +1,38 @@
+@import '../../stylesheets/colors';
+
+.OrderSummary-method,
+.OrderSummary-total {
+  text-align: center;
+  margin-bottom: 20px;
+
+  h5 {
+    text-transform: uppercase;
+    color: $gray-light;
+  }
+}
+
+.OrderSummary-total {
+  h5 {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 26px;
+    font-weight: bold;
+    color: $success;
+  }
+}
+
+.OrderSummary-method h5 {
+  font-size: 13px;
+}
+
+.OrderSummary-items {
+  margin-bottom: 20px;
+
+  .fa-remove {
+    margin-left: 10px;
+    color: $danger;
+  }
+}
