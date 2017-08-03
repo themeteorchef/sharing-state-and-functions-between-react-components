@@ -21,15 +21,15 @@ class Order extends React.Component {
   }
 
   handleAddItem(item) {
-    const existingOrder = this.state;
-    existingOrder.items.push(item);
-    this.setState(existingOrder);
+    const existingOrderItems = this.state.items.slice();
+    existingOrderItems.push(item);
+    this.setState({ items: existingOrderItems });
   }
 
   handleRemoveItem(itemName) {
-    const existingOrder = this.state;
-    existingOrder.items = _.reject(existingOrder.items, item => item.name === itemName);
-    this.setState(existingOrder);
+    const existingOrderItems = this.state.items.slice();
+    existingOrderItems = _.reject(existingOrderItems, item => item.name === itemName);
+    this.setState({ items: existingOrderItems });
   }
 
   handleSetOrderMethod(method) {
